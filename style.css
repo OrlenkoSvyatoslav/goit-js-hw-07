@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: 20px;
+}
+
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.go-back-link {
+  padding: 20px;
+}
