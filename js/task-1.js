@@ -7,11 +7,9 @@
 
 const categoriesList = document.querySelectorAll(".item");
 
-console.log(`Кількість категорій : ${categoriesList.length}`);
+console.log(`Number of categories : ${categoriesList.length}`);
 
 categoriesList.forEach((element) => {
-  console.log(`Заголовок категорії : ${element.firstElementChild.textContent}`);
-  console.log(
-    `Кількість єлементів у категорії : ${element.lastElementChild.children.length}`
-  );
+  console.log(`Category: ${element.firstElementChild.textContent}`);
+  console.log(`Elements: ${element.lastElementChild.children.length}`);
 });
