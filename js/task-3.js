@@ -8,7 +8,7 @@ const inputElement = document.querySelector("#name-input");
 
 const spanElement = document.querySelector("#name-output");
 
-inputElement.addEventListener("change", (event) => {
+inputElement.addEventListener("input", (event) => {
   if (event.target.value.trim() !== "") {
     spanElement.textContent = event.target.value.trim();
   } else {

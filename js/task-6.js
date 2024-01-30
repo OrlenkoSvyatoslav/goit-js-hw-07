@@ -22,15 +22,19 @@ const buttonDestroy = document.querySelector("button[data-destroy]");
 const boxes = document.querySelector("#boxes");
 
 buttonCreate.addEventListener("click", onButtonCreateClick);
-buttonDestroy.addEventListener("click", destroyBoxes);
+buttonDestroy.addEventListener("click", onDestroyBoxes);
 
 function onButtonCreateClick() {
   if (inputNumber.value >= 1 && inputNumber.value <= 100) {
     createBoxes(inputNumber.value);
   }
 }
+function onDestroyBoxes() {
+  destroyBoxes();
+}
 
 function createBoxes(amount) {
+  destroyBoxes();
   let width = 30;
   let height = 30;
   for (let i = 0; i <= amount; i++) {
