@@ -37,7 +37,7 @@ function createBoxes(amount) {
   destroyBoxes();
   let width = 30;
   let height = 30;
-  for (let i = 0; i <= amount; i++) {
+  for (let i = 1; i <= amount; i++) {
     const boxColor = getRandomHexColor();
     const markup = `<div style="background-color:${boxColor};  
     width:${width}px; 
